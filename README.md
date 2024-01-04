@@ -2,4 +2,4 @@
 
 ## Table of Contents
 
-19. [Day 19](/day-19)
+19. [Day 19](/day19)
