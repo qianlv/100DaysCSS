@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+  box-sizing: border-box;
+}
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #5ca4ea;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 60px;
+  border: none;
+  text-align: center;
+  line-height: 58px;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  display: flex;
+}
+
+.center:hover {
+  background-color: #4f95da;
+}
+
+span {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  fill: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.bg-line {
+  stroke: #91C9FF;
+  stroke-width: 1px;
+}
+
+.hl-line {
+  stroke: white;
+  stroke-width: 1px;
+  stroke-dasharray: 40 480;
+  stroke-dashoffset: 40;
+  transition: all 0.8s ease-in-out;
+}
+
+.center:hover .hl-line {
+  stroke-dashoffset: -480;
+}
